@@ -1,0 +1,277 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position:relative;
+}
+
+body{
+    background:linear-gradient(to right,green,orange);
+    color:white;
+    text-shadow:2px 1px black;
+}
+
+.header{
+    height:20vh;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+h1{
+    position:absolute;
+    left:15%;
+    font-size:45px;
+}
+
+h1:nth-child(2){
+    left:20%;
+    top:30%;
+}
+
+
+.app{
+    width:100vw;
+    height:80vh;
+    display:flex;
+}
+
+.dialogue{
+    left:25%;
+}
+
+.column{
+ 
+    height:100%;
+}
+
+.smallcolumn{
+    width:30%;
+    background:linear-gradient(to right,lightgray,gray);
+    
+}
+
+.maincolumn{
+    width:40%;
+}
+
+.animateelevator_right{
+    animation:slideleft 2s;
+  
+}
+
+.animateelevator_left{
+    animation:slideright 2s;
+}
+
+
+@keyframes slideright{
+    0%{left:0%}
+    100%{left:5%;transform:translateX(-85%)}
+}
+
+
+@keyframes slideleft{
+    0%{left:0%}
+    100%{left:-5%;transform:translateX(85%)}
+ 
+}
+
+
+.person{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    z-index:-2;
+    
+}
+
+.animate-person{
+    animation:descend 2s forwards;
+    transition:2s ease;
+}
+
+@keyframes descend{
+    0%{top:0%}
+    20%{top:20%}
+    40%{top:40%}
+    60%{top:60%}
+    80%{top:80%}
+    100%{top:100%}
+}
+
+
+.head{
+    border-radius:50%;
+    height:100px;
+    width:100px;
+    background:rgb(179, 148, 90);
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items:center;
+ 
+}
+
+.eyes{
+    width:65%;
+    margin:0 auto;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.eye{
+    border-radius:50%;
+    border:1px solid black;
+    height:20px;
+    width:20px;
+    transform:rotate(180deg)
+    
+}
+
+.pupil{
+    height:10px;
+    widows: 10px;
+    background:black;
+    border-radius:50%;
+  
+}
+
+.eyeclose{
+    height:3px;
+    width:20px;
+    background:black;
+}
+
+.mouth{
+    width:20px;
+    height:2px;
+    background:black;
+}
+
+.neck{
+    background:rgb(179, 148, 90);
+    top:-5px;
+    width: 40px;
+    height:30px;
+}
+
+.body{
+    height:150px;
+    width:100px;
+    background:red;
+    top:-10px;
+    display:flex;
+    justify-content: space-between;
+}
+
+.arm{
+    height:75px;
+    width:20px;
+    background:red;
+    transform-origin:top;
+    transform:rotate(30deg)
+}
+
+
+.armtwo{
+    transform:rotate(-30deg)
+}
+
+.forearm{
+    width:20px;
+    height:50px;
+    background:red;
+    top:40px;
+    transform:rotate(90deg);
+    left:-20px;
+}
+
+.handtwo{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background:rgb(179, 148, 90);
+    top:60px;
+}
+
+.hand{
+    height:30px;
+    width:30px;
+    border-radius:50%;
+    background:rgb(179, 148, 90);
+    top:75px;
+ 
+}
+
+.bottom{
+    display:flex;
+    top:-20px;
+    justify-content: space-between;
+    width:60px
+}
+
+.leg{
+    z-index:-1;
+    top:-20px;
+    height:200px;
+    width:35px;
+    background:blue;
+    transform:rotate(5deg);
+    transform-origin:top;
+}
+
+
+.waist{
+    top:-30px;
+    width:100px;
+    height:30px;
+    background:blue;
+}
+
+.legone{
+    left:-20px;
+    transform:rotate(5deg);
+    transform-origin:top;
+}
+.legtwo{
+    left:20px;
+    transform:rotate(-5deg);
+    transform-origin:top;
+}
+
+.watch{
+    width:20px;
+    height:5px;
+    background:silver;
+    top:50px;
+    justify-content: center;
+    display:flex;
+    align-items:center;
+}
+
+.footone{
+    left:-25px;
+}
+
+.foot{
+    width:65px;
+    height:30px;
+    background:black;
+    top:100%;
+}
+
+.watchface{
+    height:5px;
+    width:5px;
+    background:black;
+}
+
+
+
+
+
